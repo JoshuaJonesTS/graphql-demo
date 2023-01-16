@@ -5,13 +5,13 @@ import {
   InMemoryCache, 
   ApolloProvider,
   HttpLink
-} from '@apollo/client'
+} from '@apollo/client';
 
 function App() {
   return (
-    <div className="App">
-     <Home />
-    </div>
+    <ApolloProvider>
+      <Home />
+    </ApolloProvider>
   );
 }
 
